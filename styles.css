@@ -1,0 +1,24 @@
+body{
+    font-family: verdana;
+}
+.selected {
+    border: solid 3px white;
+}
+nav{
+    background-color: tan;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+nav a {
+    color: black;
+    align-items: center;
+    margin: 1rem;
+    justify-content:center;
+    border: solid 1px darkslategray;
+}
+
+.box {
+    border: solid 3px black;
+}
