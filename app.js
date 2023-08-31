@@ -11,14 +11,14 @@ const fetchRecipes = async()=>{
 const render = ()=>{
     const hash = window.location.hash.slice(1)*1
     const html = players.players.map((player)=> {
-        return `<a href="#${player.id !== hash ? player.id : ''}" class='${player.id === hash ? 'selected': ''}'><div>Player: ${player.name}</div>
+        return `<a href="#${player.id !== hash ? player.id : ''}" ><div>Player: ${player.name}</div><hr/>
         <h6>Breed: ${player.breed}</h6></a>`
     }).join('')
     nav.innerHTML = html
     const player = players.players.find( player => {
         return player.id === hash;
     })
-    let detailHTML = 'Welcome'
+    let detailHTML = ''
     if(player){
         const html2 = `<a href="#"><div>Back to all Puppies</div></a>`
         nav.innerHTML = html2
