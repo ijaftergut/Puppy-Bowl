@@ -22,7 +22,7 @@ const render = ()=>{
     if(player){
         const html2 = `<a href="#"><div>Back to all Puppies</div></a>`
         nav.innerHTML = html2
-        detailHTML =`<div class='box'><div class="name" >Name: ${player.name}</div><hr/><div class="breed" >Breed : ${player.breed}</div><img src="${player.imageUrl}"/></div>`
+        detailHTML =`<div class='box'><div class="name" >Name: ${player.name}</div><hr/><div class="breed" >Breed : ${player.breed}</div><img class='img' src="${player.imageUrl}"/></div>`
     }
     detail.innerHTML = (detailHTML)
 }
