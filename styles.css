@@ -1,5 +1,6 @@
 body{
     font-family: verdana;
+    background-color: antiquewhite;
 }
 nav{
     background-color: tan;
@@ -23,8 +24,11 @@ nav a {
 .box {
     border: solid 3px black;
     text-align: center;
+    background-color: bisque;
 }
 .extra{
+    border: solid 3px black;
+    text-align: center;
     height: 20px;
     width: 180px;
 }
